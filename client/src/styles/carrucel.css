@@ -1,0 +1,60 @@
+/* Reset general del cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Fondo negro para toda la página */
+  }
+  
+  /* Estilo para el párrafo de bienvenida */
+  .jumbotron h1 {
+    font-family: 'Cochocib Script Latin Pro', cursive;
+    font-size: 36px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    font-style: italic; /* Texto en cursiva */
+    color: blue; /* Color inicial */
+    animation: colorChange 5s infinite; /* Animación de cambio de colores */
+  }
+  
+  /* Definición de la animación */
+  @keyframes colorChange {
+    0% {
+      color: blue;
+    }
+    50% {
+      color: green;
+    }
+    100% {
+      color: purple;
+    }
+  }
+  
+  /* Estilo para el contenedor del carrusel */
+  .container {
+    text-align: center;
+  }
+  
+  /* Estilo para el carrusel */
+  .carousel {
+    width: 70%;
+    margin: 20px auto;
+  }
+  
+  .carousel img {
+    width: 100%;
+    
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid red; /* Añade un borde para depurar */
+  }
+  
+  
+  /* Estilo para el logo (posicionado en la esquina superior derecha) */
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    height: 200px;
+  }
+  

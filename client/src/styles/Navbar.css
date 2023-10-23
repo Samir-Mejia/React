@@ -1,0 +1,48 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #8B4513 !important; /* Color café para la barra de navegación */
+    transition: background-color 0.5s ease;
+  }
+  
+  .navbar-brand {
+    color: #ffffff !important;
+    transition: color 0.5s ease;
+  }
+  
+  .navbar-brand:hover {
+    color: #e74c3c !important;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+  
+  .navbar-brand img {
+    margin-right: 10px;
+  }
+  
+  .navbar-nav .active .nav-link {
+    color: #2ecc71 !important;
+  }
+  
+  .bg-body-tertiary.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .fixed-top {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fixed-top.scroll-up {
+    background-color: #8B4513 !important; /* Cambiar color al hacer scroll hacia arriba si es necesario */
+    box-shadow: none;
+  }
+  

@@ -1,0 +1,101 @@
+/* Estilo para el título "Lista de Productos" */
+.productos-title {
+  font-family: 'Cochocib Script Latin Pro', cursive;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+  color: blue;
+  animation: colorChange 5s infinite;
+}
+
+/* Animación de cambio de colores */
+@keyframes colorChange {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: purple;
+  }
+}
+
+
+.btn-danger {
+  background-color: red; /* Color para "Eliminar" */
+}
+
+
+/* Estilo para las imágenes de productos */
+.card-img-top {
+  max-width: 100%;
+  height: 150px; /* Puedes ajustar la altura según tus preferencias */
+  object-fit: cover; /* Para mantener la proporción de la imagen */
+}
+
+/* Estilo para el contenedor de productos */
+.productos-container {
+  margin-bottom: 20px;
+}
+
+.carrito-container p {
+  margin-bottom: 10px;
+}
+
+.list-group-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.list-group-item img {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+.list-group-item button {
+  font-size: 16px;
+}
+
+/* Ajustes para el contenedor general */
+.col-md-4 {
+  margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Ajustes para el scroll del contenedor */
+.carrito-container {
+  max-height: 1000px;
+  overflow-y: auto;
+  position: sticky;
+  top: 50px;
+}
+
+
+/* Estilos para los productos */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.list-group-item {
+  text-align: left;
+  padding: 5px;
+}
+
+.list-group-item span.descripcion {
+  font-weight: bold; /* Hace que la descripción aparezca en negrita */
+}
+
+/* Opcional: Ajustar margen entre los elementos */
+.list-group-item + .list-group-item {
+  margin-top: 5px;
+}

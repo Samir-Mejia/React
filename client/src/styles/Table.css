@@ -1,0 +1,46 @@
+/* Table.css */
+
+/* Ajustes generales para la fila de la tabla */
+tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilo para las celdas de la tabla */
+  td {
+    padding: 8px;
+  }
+  
+  /* Estilo para las imágenes en la tabla */
+  td img {
+    display: block;
+    margin: auto;
+  }
+  
+  /* Estilo para los botones de la fila */
+  .btn-group button {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  /* Color y estilo para el botón de editar */
+  .btn-info {
+    background-color: #17a2b8;
+    border: none;
+    color: #fff;
+  }
+  
+  .btn-info:hover {
+    background-color: #117a8b;
+  }
+  
+  /* Color y estilo para el botón de eliminar */
+  .btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    background-color: #a71d2a;
+  }
+  

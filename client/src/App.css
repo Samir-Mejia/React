@@ -1,0 +1,77 @@
+/* App.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Color de fondo general */
+  }
+  
+  .inicio {
+    padding: 20px;
+  }
+  
+  .productos {
+    padding: 20px;
+  }
+  
+  .datos {
+    margin-top: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Color azul para los botones primarios */
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Color azul oscuro al pasar el ratón */
+  }
+  
+  .btn-warning {
+    background-color: #ffc107; /* Color amarillo para los botones de advertencia */
+    border: none;
+  }
+  
+  .btn-warning:hover {
+    background-color: #d39e00; /* Color amarillo oscuro al pasar el ratón */
+  }
+  
+  .btn-info {
+    background-color: #17a2b8; /* Color azul claro para los botones de información */
+    border: none;
+  }
+  
+  .btn-info:hover {
+    background-color: #117a8b; /* Color azul oscuro al pasar el ratón */
+  }
+  
+  .btn-danger {
+    background-color: #dc3545; /* Color rojo para los botones de peligro */
+    border: none;
+  }
+  
+  .btn-danger:hover {
+    background-color: #a71d2a; /* Color rojo oscuro al pasar el ratón */
+  }
+  
+  .table {
+    background-color: #fff; /* Fondo blanco para las tablas */
+  }
+  
+  .table th,
+  .table td {
+    text-align: center;
+  }
+  
+  .table th {
+    background-color: #007bff; /* Color azul para las celdas de encabezado de la tabla */
+    color: #fff; /* Texto blanco para las celdas de encabezado de la tabla */
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa; /* Fondo gris claro para las filas impares */
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1; /* Fondo gris más claro al pasar el ratón sobre las filas */
+  }
+  
