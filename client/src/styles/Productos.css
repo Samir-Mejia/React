@@ -4,28 +4,27 @@
   font-size: 36px;
   font-weight: bold;
   font-style: italic;
-  color: blue;
+
   animation: colorChange 5s infinite;
 }
 
 /* Animación de cambio de colores */
 @keyframes colorChange {
   0% {
-    color: blue;
+    color: rgb(0, 255, 47);
   }
   50% {
-    color: green;
+    color: rgb(255, 0, 162);
   }
   100% {
-    color: purple;
+    color: rgb(255, 0, 255);
   }
 }
 
-
+/* Color para "Eliminar" */
 .btn-danger {
-  background-color: red; /* Color para "Eliminar" */
+  background-color: red;
 }
-
 
 /* Estilo para las imágenes de productos */
 .card-img-top {
@@ -39,37 +38,26 @@
   margin-bottom: 20px;
 }
 
-.carrito-container p {
-  margin-bottom: 10px;
-}
-
-.list-group-item {
-  border: 1px solid #ddd;
-  margin-bottom: 10px;
-}
-
-.list-group-item img {
-  max-width: 50px;
-  max-height: 50px;
-  margin-right: 10px;
-}
-
-.list-group-item button {
-  font-size: 16px;
-}
-
-/* Ajustes para el contenedor general */
+/* Estilo para el contenedor general */
 .col-md-4 {
   margin-top: 50px; /* Ajusta el margen superior según sea necesario */
 }
 
-/* Ajustes para el scroll del contenedor */
+/* Ajustes para el scroll del carrito */
 .carrito-container {
   max-height: 1000px;
   overflow-y: auto;
   position: sticky;
   top: 50px;
+  right: auto; /* Establece el margen derecho a "auto" */
+  left: 50%; /* Centra horizontalmente el carrito en el contenedor */
+  transform: translateX(50%); /* Centra horizontalmente el carrito */
+  width: 300px;
+  background-color: white;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
+
 
 
 /* Estilos para los productos */
@@ -89,13 +77,21 @@
 .list-group-item {
   text-align: left;
   padding: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
 }
 
-.list-group-item span.descripcion {
-  font-weight: bold; /* Hace que la descripción aparezca en negrita */
+.list-group-item img {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+.list-group-item button {
+  font-size: 16px;
 }
 
 /* Opcional: Ajustar margen entre los elementos */
 .list-group-item + .list-group-item {
-  margin-top: 5px;
+  margin-top: 2px;
 }

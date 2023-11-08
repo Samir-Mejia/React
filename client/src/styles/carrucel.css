@@ -1,60 +1,53 @@
-/* Reset general del cuerpo de la página */
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: black; /* Fondo negro para toda la página */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #1b32c4, #0e3034, #9b59b6); /* Fondo animado con gradiente */
+  animation: gradientChange 10s infinite; /* Animación de cambio de gradiente */
+}
+
+/* Animación para el fondo */
+@keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  /* Estilo para el párrafo de bienvenida */
-  .jumbotron h1 {
-    font-family: 'Cochocib Script Latin Pro', cursive;
-    font-size: 36px; /* Tamaño del texto */
-    font-weight: bold; /* Texto en negrita */
-    font-style: italic; /* Texto en cursiva */
-    color: blue; /* Color inicial */
-    animation: colorChange 5s infinite; /* Animación de cambio de colores */
+  50% {
+    background-position: 100% 50%;
   }
-  
-  /* Definición de la animación */
-  @keyframes colorChange {
-    0% {
-      color: blue;
-    }
-    50% {
-      color: green;
-    }
-    100% {
-      color: purple;
-    }
+  100% {
+    background-position: 0% 50%;
   }
-  
-  /* Estilo para el contenedor del carrusel */
-  .container {
-    text-align: center;
-  }
-  
-  /* Estilo para el carrusel */
-  .carousel {
-    width: 70%;
-    margin: 20px auto;
-  }
-  
-  .carousel img {
-    width: 100%;
-    
-    object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid red; /* Añade un borde para depurar */
-  }
-  
-  
-  /* Estilo para el logo (posicionado en la esquina superior derecha) */
-  .logo {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 200px;
-    height: 200px;
-  }
-  
+}
+
+/* Estilo para el párrafo de bienvenida */
+.jumbotron h1 {
+  font-family: 'Cochocib Script Latin Pro', cursive;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+  color: #fff; /* Cambiado a texto blanco para mayor contraste */
+  animation: colorChange 5s infinite;
+}
+
+/* Estilo para el contenedor del carrusel */
+.container {
+  text-align: center;
+}
+
+/* Estilo para el carrusel */
+.carousel {
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #e74c3c;
+}

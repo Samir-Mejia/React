@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTimes, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 
+
 function App() {
   const [carritoVisible, setCarritoVisible] = useState(false);
   const [gestionVisible, setGestionVisible] = useState(false);
@@ -30,7 +31,6 @@ function App() {
   const [detallesVisibles, setDetallesVisibles] = useState({});
   const [busqueda, setBusqueda] = useState('');
   const [carrito, setCarrito] = useState([]);
-
 
   //crear producto//
   const add = () => {
@@ -184,7 +184,7 @@ useEffect(() => {
 
   return (
     <div>
-    <Navbar />
+     <Navbar setBusqueda={setBusqueda} />
     <div id="inicio" className="container mt-5 inicio">
       <br />
       <Carrucel />
@@ -314,6 +314,7 @@ useEffect(() => {
           </div>
         </div>
       )}<br/>
+      
       <div className="d-flex justify-content-center">
       <button
         type="button"
@@ -334,10 +335,10 @@ useEffect(() => {
     </div>
   
 
-    <div id="productos" className="container mt-5 productos">
-        <ProductsSection
-          busqueda={busqueda}
-          setBusqueda={setBusqueda}
+      <div id="productos" className="container mt-5 productos">
+      <ProductsSection 
+          busqueda={busqueda} 
+          setBusqueda={setBusqueda} 
           carritoVisible={carritoVisible}
           setCarritoVisible={setCarritoVisible}
           carrito={carrito}

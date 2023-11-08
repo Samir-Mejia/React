@@ -1,8 +1,8 @@
+import React, { useState, useEffect } from 'react';
+import Slider from 'react-slick';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import React, { useState, useEffect } from 'react';
-import Slider from 'react-slick';
 import '../styles/carrucel.css';
 
 function Carrucel() {
@@ -16,7 +16,7 @@ function Carrucel() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    beforeChange: ( next) => setCurrentSlide(next),
+    beforeChange: (next) => setCurrentSlide(next),
   };
 
   const imagePaths = Array.from({ length: 5 }, (_, index) => `/images/imagen${index + 1}.jpg`);
@@ -37,7 +37,7 @@ function Carrucel() {
     <div className="container">
       <div className="row">
         <div className="col-12 text-center">
-          <div className="jumbotron"><br/><br />
+          <div className="jumbotron">
             <h1 className="display-4">Bienvenido a Cuervo Compu-Gamer</h1>
           </div>
           <Slider {...sliderSettings} className="carousel">

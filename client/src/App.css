@@ -1,10 +1,17 @@
-/* App.css */
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; /* Color de fondo general */
-  }
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0; /* Asegura que no haya márgenes en el cuerpo de la página */
+  padding: 0; /* Asegura que no haya relleno en el cuerpo de la página */
+}
+
+/* Estilo para el contenedor del contenido principal de la página */
+.container {
+  margin-top: 60px; /* Ajusta este valor según el tamaño de tu barra de navegación */
+  padding: 20px; /* Agrega un relleno al contenido */
+}
+
+
   .inicio {
     padding: 20px;
   }
@@ -12,7 +19,6 @@ body {
   .productos {
     padding: 20px;
   }
-  
   .datos {
     margin-top: 20px;
   }
